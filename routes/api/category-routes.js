@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
     const category = await Category.findByPk( req.params.id, {
       include: [{ model: Product }],
     });
-    res.json(category);
+    res.status(200).json(category);
 
   } catch (err) {
     res.status(500).json(err);
@@ -34,7 +34,7 @@ router.post('/', async (req, res) => {
   // create a new category
   try {
     const category = await Category.create( req.body );
-    res.json(category);
+    res.status(200).json(category);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -48,7 +48,7 @@ router.put('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
-    res.json(category);
+    res.status(200).json(category);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -62,7 +62,7 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id
       }
     });
-    res.json(category);
+    res.status(200).json(category);
   } catch (err) {
     res.status(500).json(err);
   }
