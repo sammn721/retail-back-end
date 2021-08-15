@@ -2,7 +2,8 @@
 An Express.js API, configured to use Sequelize to interact with a MySQL database. I wrote the sequelize models and relationships for Category, Product, ProductTag, and Tag; and wrote RESTful routes to GET, PUSH, PUT, and DELETE to/from Category, Product, and Tag.
 
 ## Installation
-- Open terminal at application folder.
+- In terminal, clone application repository `git clone git@github.com:sammn721/retail-back-end.git`.
+- Navigate to application folder `cd retail-back-end/`.
 - Install dependencies `npm i`.
 - Create .env file and paste the following lines, changing the DB_USER and DB_PW to your MySQL credentials if necessary.
 ```
