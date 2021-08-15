@@ -18,3 +18,5 @@ DB_PW=password
 ## Usage
 - Start the application `npm start`.
 - See video below for example usage in Insomnia:
+
+https://user-images.githubusercontent.com/82857538/129472542-9b5119a9-3758-4e2d-ae5d-a9bb03aa0b28.mov
